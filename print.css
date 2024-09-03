@@ -1,0 +1,23 @@
+@media print {
+
+    /* Hide all elements except the receipt */
+    body * {
+        visibility: hidden;
+    }
+
+    /* Make the receipt visible */
+    .receipt-container,
+    .receipt-container * {
+        visibility: visible;
+    }
+
+    /* Position the receipt at the top of the page */
+    .receipt-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    /* Optionally, you can add more styling for printing if needed */
+}
